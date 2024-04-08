@@ -1,0 +1,75 @@
+*{
+    margin: 0px;
+    padding: 0;
+    box-sizing: border-box;
+}
+section{
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+section>article{
+    height: 500px;
+    width: 500px;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+section>article>h1{
+    font-family:'Courier New', Courier, monospace;
+    font-size: 51px;
+    color: red;
+    font-style: italic;
+    font-weight: 900;
+}
+section>article>div>.btn{
+    height: 40px;
+    width: 40px;
+    margin-top: 20px;
+    margin: 10px;
+    font-size: medium;
+    border-radius: 50%;
+    border-spacing: 2px;
+    cursor: pointer;
+    display: inline;
+}
+section>article>div>#yes{
+    background-color: green;
+
+}
+section>article>div>#no{
+    background-color: red;
+}
+.alert{
+    /* height: 100px;
+    width: 100px;
+    border: 2px 2px  red;
+    border-radius: 50%;
+    background-color: aqua;
+    color: white;*/
+    --c: red;
+    width: 200px;
+    aspect-ratio: 1;
+    background:
+      radial-gradient(circle at 60% 65%,var(--c) 64%,#0000 65%) top left/50% 50%,
+      radial-gradient(circle at 40% 65%,var(--c) 64%,#0000 65%) top right/50% 50%,
+      conic-gradient(from -45deg at 50% 85.5%,var(--c) 90deg,#0000 0) bottom/100% 50%;
+    background-repeat: no-repeat;
+    display: none;
+    cursor: pointer;
+    text-align: center;
+    padding: 40px 0;
+
+
+}
+h2{
+    text-decoration:underline ;
+    padding: 20px;
+   
+    
+}
